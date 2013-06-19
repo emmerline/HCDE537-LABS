@@ -1,0 +1,259 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
+<title>Main Page Template</title>
+
+<!-- Begin Styles -->
+<style type="text/css" media="all">
+
+* { margin: 0; padding: 0; border: 0;}
+
+body {
+	background-image: url(images/bg-body.gif);
+	background-color: #2d2c7b;
+	}
+	
+h2 {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 21px;
+	color: #bb102a;
+	margin-bottom: 4px;
+	}
+
+h3 {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 18px;
+	color: #bb102a;
+	padding-top: 8px;
+	margin-bottom: 4px;
+	}
+
+p {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	line-height: 21px;
+	margin-bottom: 7px;
+	}
+			
+	p a {
+		color: #000; 
+		text-decoration: underline;
+		} 
+		
+	p a:hover {
+		color: #000; 
+		text-decoration: none;
+		} 
+		
+li {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	line-height: 21px;
+	margin-bottom: 7px;
+	}
+			
+	li a {
+		color: #000; 
+		text-decoration: none;
+		} 
+		
+	li a:hover {
+		color: #000; 
+		text-decoration: none;
+		}
+
+#header {
+	width: 940px;
+	height: 178px;
+ 	margin: 0px auto;
+ 	background-image: url(images/bg-header.gif);	
+	}
+	
+	#logo {
+		margin-left: 50px;
+		}
+			
+#navigation {
+	width: 940px;
+	height: 50px;
+	margin: 0px auto;
+	background-image: url(images/bg-navigation.gif);
+	}
+	
+	#navigation-items {
+		text-align: center;
+		/*padding-top:15px;*/
+		}
+	
+	#navigation-items li {
+		font-family: Verdana, Arial, Helvetica, sans-serif;
+		font-size: 18px;
+		color: #FFFFFF;
+		list-style-type: none;
+		display: inline;
+		height: 50px;
+		border: 1px solid magenta;		
+		}
+		
+		#navigation-items li a {
+			color: #FFFFFF;
+			padding: 12px 58px;
+			display:inline-block;
+			height: 26px;
+			position: relative;
+			border: 1px solid yellow;
+			} 
+		
+		#navigation-items li a:hover {
+			color: #bb102a;
+			background-color:#FFFFFF;
+			}
+		
+#middle {
+	width: 940px;
+	margin: 0 auto;
+	background-image: url(images/bg-middle.gif);
+	}
+	
+	#left {
+		width: 240px;
+		float: left;
+		padding-left: 40px;
+		padding-top: 20px;
+		}
+		
+		#sub-navigation-head {
+			height: 20px;
+			margin-bottom: 0px;
+			padding-top: 4px;
+			padding-left: 10px;
+			background-image: url(images/bg-sub-navigation-head.gif);
+			font-family: Verdana, Arial, Helvetica, sans-serif;
+			font-size: 12px;
+			color: #FFFFFF;
+			}
+			
+		#sub-navigation-items {
+			border-right: 1px solid #949ca1;
+			border-bottom: 1px solid #949ca1;
+			border-left: 1px solid #949ca1;
+			padding: 5px 5px;
+			margin: 0px;
+			}
+	
+			#sub-navigation-items li {
+				font-family: Verdana, Arial, Helvetica, sans-serif;
+				font-size: 14px;
+				color: #949ca1;
+				list-style-type: none;
+				padding-left: 16px;
+				background-image: url(images/bg-sub-navigation-list.gif);
+				background-repeat: no-repeat;
+				background-position: center left;
+				}
+				
+				#sub-navigation-items li a {
+					color: #949ca1;					
+					} 
+				
+				#sub-navigation-items li a:hover {
+					color: #bb102a;
+					}
+
+	#right {
+		width: 580px;
+		float: right;
+		padding-top: 20px;
+		padding-right: 40px;
+		padding-bottom: 20px;
+		}
+		
+	.clear {
+		clear: both;
+		height: 0;
+		}
+	
+#footer {
+	width: 940px;
+	height: 115px;
+	margin: 0 auto;
+	background-image:url(images/bg-footer.gif);
+	text-align:center;
+	}
+	
+	#footer p {
+		color:#FFFFFF;
+		padding: 30px;
+		}
+
+
+		
+</style>
+<!-- End Styles -->
+
+</head>
+
+<body>
+
+<!-- Begin Header -->
+<div id="header">
+	<h1 id="logo"><a href="#"><img src="images/logo.gif" alt="Premium Design Works" /></a></h1>
+</div>
+<!-- End Header -->
+
+<!-- Begin Navigation -->
+<div id="navigation">
+    <ul id="navigation-items">
+    <li><a href="#">About</a></li>
+    <li><a href="#">Services</a></li>
+    <li><a href="#">Work</a></li>
+    <li><a href="#">Blog</a></li>
+    <li><a href="#">Contact</a></li>
+    </ul>
+</div>
+<!-- End Navigation -->
+
+<!-- Begin Middle -->
+<div id="middle">
+
+	<!-- Begin Left -->
+	<div id="left">
+    	<h2 id="sub-navigation-head">About</h2>
+        <ul id="sub-navigation-items">
+        <li><a href="#">Mission</a></li>
+        <li><a href="#">Process</a></li>
+        <li><a href="#">Team</a></li>
+        </ul>
+	</div>
+	<!-- End Left -->
+	
+	<!-- Begin Right -->
+	<div id="right">    
+    	<h2>What is Lorem Ipsum</h2>
+		<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
+        <h3>Where does it come from?</h3>
+        <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source.</p>
+        <h3>Why do we use it?</h3>
+        <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy.</p>
+        <h3>Where can I get some?</h3>
+        <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet.
+	</div>
+	<!-- End Right -->
+	
+	<!-- Begin Clear -->
+	<div class="clear">&nbsp;</div>
+	<!-- End Clear -->
+
+</div>
+<!-- End Middle -->
+
+<!-- Begin Footer -->
+<div id="footer">
+	<p><small>©2010 Premium Design Works.<br />All rights reserved.</small></p>
+</div>
+<!-- End Footer -->
+
+
+</body>
+</html>
