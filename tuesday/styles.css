@@ -89,6 +89,15 @@ div#middle {
 	overflow: hidden;
 }
 
+#headshot {
+	float: right;
+	margin-left: 10px;
+	margin-bottom: 5px;
+	padding: 5px;
+	border: 1px solid #000;
+	width: 50%;
+}
+
 article {
 	width: 620px;
 	float: left;

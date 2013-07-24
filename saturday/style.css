@@ -1,7 +1,7 @@
 @charset "UTF-8";
 /* CSS Document */
 
-* { margin:0; padding: 0; border:0; }
+* { margin:0; padding: 0; }
 
 body {
 	/*background-image:url(images/12_col.gif);*/
@@ -40,6 +40,10 @@ h3 {
 	font-size: 18px;
 	padding-top: 8px;
 	margin-bottom: 4px;
+}
+
+input {
+	border: 1px solid magenta;
 }
 
 header {
