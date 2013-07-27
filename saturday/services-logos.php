@@ -1,42 +1,9 @@
-<!doctype html>
-<html>
-<head>
-<meta charset="UTF-8">
-<title>Mike Sinkula's About Page</title>
-
-<!-- Begin Styles -->
-<link href="style.css" rel="stylesheet" type="text/css" media="all" />
-<!-- End Styles -->
-
-</head>
-
-<body>
-
-<!-- Begin Header -->
-<header>
-<h1><img src="images/logo.png" width="500" height="50" alt="Mike Sinkula's Website"></h1>
-</header>
-<!-- End Header -->
-
-<!-- Begin Navigation -->
-<nav>
-<ul>
-<li><a href="about.html">About</a></li>
-<li><a href="services.html">Services</a></li>
-<li><a href="portfolio.html">Portfolio</a></li>
-<li><a href="contact.html">Contact</a></li>
-</ul>
-</nav>
-<!-- End Navigation -->
-
-<!-- Begin Middle -->
-<div id="middle">
+<?php include("includes/header.php"); ?>
 
     <!-- Begin Article -->
     <article>
-    <h2>Read about me!</h2>
-    <img id="headshot" src="images/img-myface.jpg" width="150" height="175" alt="I am a clown!">
-<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce pellentesque tristique mi, ac lobortis risus ornare nec. Mauris non augue imperdiet, blandit mauris id, molestie nibh. Fusce accumsan lacus non dignissim scelerisque. Mauris ac tortor ut enim ullamcorper iaculis.</p>
+    <h2>Logo Design</h2>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce pellentesque tristique mi, ac lobortis risus ornare nec. Mauris non augue imperdiet, blandit mauris id, molestie nibh. Fusce accumsan lacus non dignissim scelerisque. Mauris ac tortor ut enim ullamcorper iaculis.</p>
     <p>Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed augue ante, mattis eu urna consectetur, condimentum faucibus est. Duis lorem nibh, suscipit vitae adipiscing eget, posuere egestas nisl.</p>
     <h3>Level Three Heading</h3>
     <p>Etiam ac purus felis. Pellentesque sed nulla libero. Aenean interdum lacinia diam, vehicula aliquet dolor lacinia eu. Integer ac convallis justo. Maecenas non ligula a enim iaculis lacinia. Nulla facilisi. Nullam eget pharetra ante, sit amet pharetra libero. Vivamus commodo dolor volutpat euismod dictum. Maecenas sit amet arcu adipiscing, elementum dui vitae, vulputate lectus.</p>
@@ -49,24 +16,6 @@
     </article>
     <!-- End Article -->
     
-    <!-- Begin Sidebar -->
-    <aside>
-    <ul>
-    <li><a href="#">Lorem ipsum dolor</a></li>
-    <li><a href="#">Aliquam tincidunt</a></li>
-    <li><a href="#">Vestibulum auctor</a></li>
-    </ul>
-    <aside>
-    <!-- End Sidebar -->
-    
-</div>
-<!-- End Middle -->
+<?php include("includes/sidebar-services.php"); ?>
 
-<!-- Begin Footer -->
-<footer>
-<p class="copyright">&copy; 2013 <a href="mailto:mike@mikesinkula.com">Mike Sinkula</a></p>
-</footer>
-<!-- End Footer --> 
-
-</body>
-</html>
+<?php include("includes/footer.php"); ?>

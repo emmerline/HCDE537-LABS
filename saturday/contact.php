@@ -1,36 +1,4 @@
-<!doctype html>
-<html>
-<head>
-<meta charset="UTF-8">
-<title>Mike Sinkula's Contact Page</title>
-
-<!-- Begin Styles -->
-<link href="style.css" rel="stylesheet" type="text/css" media="all" />
-<!-- End Styles -->
-
-</head>
-
-<body>
-
-<!-- Begin Header -->
-<header>
-<h1><img src="images/logo.png" width="500" height="50" alt="Mike Sinkula's Website"></h1>
-</header>
-<!-- End Header -->
-
-<!-- Begin Navigation -->
-<nav>
-<ul>
-<li><a href="about.html">About</a></li>
-<li><a href="services.html">Services</a></li>
-<li><a href="portfolio.html">Portfolio</a></li>
-<li><a href="contact.html">Contact</a></li>
-</ul>
-</nav>
-<!-- End Navigation -->
-
-<!-- Begin Middle -->
-<div id="middle">
+<?php include("includes/header.php"); ?>
 
 <?php
 
@@ -65,11 +33,11 @@ print ("<p>Thank You for contacting Me, <b>{$_POST['name']}</b>!</p>\n"); // Not
     <table width="620"  cellspacing="10">
   <tr>
     <td><label for="name">Name:</label></td>
-    <td><input name="name" type="text" required="required"></td>
+    <td><input name="name" type="text" required></td>
   </tr>
   <tr>
     <td><label for="email">Email:</label></td>
-    <td><input name="email" type="email" required="required"></td>
+    <td><input name="email" type="email" required></td>
   </tr>
   <tr>
     <td><label for="subject">Subject:</label></td>
@@ -100,24 +68,6 @@ print ("<p>Thank You for contacting Me, <b>{$_POST['name']}</b>!</p>\n"); // Not
     </article>
     <!-- End Article -->
     
-    <!-- Begin Sidebar -->
-    <aside>
-    <ul>
-    <li><a href="#">Lorem ipsum dolor</a></li>
-    <li><a href="#">Aliquam tincidunt</a></li>
-    <li><a href="#">Vestibulum auctor</a></li>
-    </ul>
-    <aside>
-    <!-- End Sidebar -->
-    
-</div>
-<!-- End Middle -->
+<?php include("includes/sidebar-contact.php"); ?>
 
-<!-- Begin Footer -->
-<footer>
-<p class="copyright">&copy; 2013 <a href="mailto:mike@mikesinkula.com">Mike Sinkula</a></p>
-</footer>
-<!-- End Footer --> 
-
-</body>
-</html>
+<?php include("includes/footer.php"); ?>

@@ -36,34 +36,23 @@
 <!-- Begin Text -->
 <article>
 <h2>Drop me a line, brutha!</h2>
+<?php // Script that sends form data as an email
 
+if ( isset ($_POST['submit-form']) ) {  // If form is submitted:
 
-<?php
-
-
-if ( isset ($_POST['submit-form']) ) {  // Check for each form value when the form is submitted:
-
-$problem = FALSE; // no problems!
-
-
-if (!$problem) { // if there are no problems:
-
-$mailMesage =  ("{$_POST['name']} {$_POST['email']} wrote: \n\n{$_POST['message']}"); // message of the email.
-
-$mailSubject = "{$_POST['subject']}"; // subject of the email.
-
-$mailRecipient = "mike@mikesinkula.com"; // destination email address.
-
-mail ($mailRecipient, $mailSubject , $mailMesage); // Function to send the email.
-
-print ("<p>Thank You for contacting Me, <b>{$_POST['name']}</b>!</p>\n"); // Notice that thanks the user.
-
-}
-
-}
+	$mailMesage =  ("{$_POST['name']} {$_POST['email']} wrote: \n\n{$_POST['message']}"); // message of the email.
+	
+	$mailSubject = "{$_POST['subject']}"; // Subject of the email.
+	
+	$mailRecipient = "mike@mikesinkula.com"; // Destination email address.
+	
+	mail ($mailRecipient, $mailSubject , $mailMesage); // Function to send the email.
+	
+	print ("<p>Thank You for contacting Me, <b>{$_POST['name']}</b>!</p>\n"); // Notice that thanks the user.
+	
+	}
 
 ?>
-
 <form action="contact.php" method="post">
 <table width="620" border="1" cellspacing="10">
   <tr>
