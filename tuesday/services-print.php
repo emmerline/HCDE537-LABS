@@ -1,41 +1,8 @@
-<!doctype html>
-<html>
-<head>
-<meta charset="UTF-8">
-<title>Mike Sinkula's First Web Page</title>
-
-
-<!-- Begin Styles -->
-<link href="styles.css" rel="stylesheet" type="text/css" media="all" />
-<!-- End Styles -->
-
-</head>
-
-<body>
-
-<!-- Begin Header -->
-<header>
-<h1><a href="index.html"><img src="images/logo.png" width="500" height="50" border="0" alt="Mike Sinkula's Website"></a></h1>
-</header>
-<!-- End Header -->
-
-<!-- Begin Navigation -->
-<nav>
-<ul>
-<li><a href="about.html">About</a></li>
-<li><a href="services.html">Services</a></li>
-<li><a href="portfolio.html">Portfolio</a></li>
-<li><a href="contact.html">Contact</a></li>
-</ul>
-</nav>
-<!-- End Navigation -->
-
-<!-- Begin Middle -->
-<div id="middle">
+<?php  include('includes/header.php'); ?>
 
 <!-- Begin Text -->
 <article>
-<h2>Read about my services, Rohit!</h2>
+<h2>Print Design Services</h2>
 <p>Etiam ornare fringilla purus, sit amet cursus lorem sagittis nec. Sed viverra venenatis ipsum, eget consectetur lacus. Etiam in sagittis est. Sed aliquam augue in tortor faucibus laoreet. Aliquam placerat laoreet facilisis.</p>
 <h3>Level Three Heading</h3>
 <p>Praesent rhoncus neque a nisl euismod, at elementum metus hendrerit. Cras feugiat mauris et placerat sollicitudin. Sed malesuada et lectus at ultricies. Proin hendrerit pellentesque sollicitudin. Proin facilisis eu mauris at volutpat.</p>
@@ -46,24 +13,6 @@
 </article>
 <!-- End Text -->
 
-<!-- Begin Sidebar -->
-<aside>
-<ul>
-   <li>Lorem ipsum dolor sit</li>
-   <li>Aliquam tincidunt mauris</li>
-   <li>Vestibulum auctor</li>
-</ul>
-</aside>
-<!-- End Sidebar -->
+<?php include('includes/sidebar-services.php'); ?>
 
-</div>
-<!-- End Middle -->
-
-<!-- Begin Footer -->
-<footer>
-<p class="copyright">&copy; 2013 <a href="mailto:mike@mikesinkula.com">Mike Sinkula</a></p>
-</footer>
-<!-- End Footer -->
-
-</body>
-</html>
+<?php include('includes/footer.php'); ?>

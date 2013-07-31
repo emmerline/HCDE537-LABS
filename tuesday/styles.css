@@ -121,6 +121,16 @@ aside ul li {
 	padding-left: 20px;
 }
 
+aside ul li a {
+	color: #000;
+	text-decoration: none;
+}
+
+aside ul li a:hover {
+	color: #CCC;
+	text-decoration: none;
+}
+
 footer {
 	width: 940px;
 	margin: 0 auto;
